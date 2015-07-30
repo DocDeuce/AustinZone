@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Lustria);
+@font-face {
+    font-family: 'ever_afterregular';
+    src: url('../font/everafte-webfont.eot');
+    src: url('../font/everafte-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/everafte-webfont.woff') format('woff'),
+         url('../font/everafte-webfont.ttf') format('truetype'),
+         url('../font/everafte-webfont.svg#ever_afterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	width: 100%;
+	margin: 0;
+	font-family: Lustria, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    position: relative;
+    background: url("../images/cream_pixels_@2X.png") fixed;
+}
+div{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    background-color: rgba(155,155,155,.2);
+    /*background: rgba(255,255,255,.2);*/
+}
+
+section{
+    margin: 0 20px 0 200px;
+    clear: both;
+}
+article{
+    display: block;
+    overflow: hidden;
+    padding: 0;
+}
+h1, h2, h3{
+    font-family: "ever_afterregular", sans-serif;
+    color: #0071B8;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 56px;
+    line-height: 50px;
+}
+h2{
+    font-size: 46px;
+    line-height: 40px;
+    vertical-align: top;
+}
+h3{
+    font-size: 36px;
+}
+p{
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+}
+input{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 30px;
+    border: 1px solid #0071B8;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: rgba(255,255,255,.55);
+}
+button{
+    display: block;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border:none;
+    outline: none;
+}
+svg{
+    display: block;
+    width: 180px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+#tagline{
+    width: 640px;
+    padding: 0;
+    text-align: left;
+    font-size: 50px;
+}
+.lower{
+    vertical-align: sub;
+}
+#vid{
+    width: 640px;
+    float: left;
+}
+
+#about iframe{
+	width: 640px;
+        height: 360px;
+}
+#about article{
+    padding: 60px 20px 0 20px;
+}
+#about h2{
+    display:inline;
+    float: left;
+}
+#about p:not(.privacy){
+    margin-top: 19px;
+}
+
+.privacy{
+    font-size: 12px;
+    line-height: 15px;
+    margin: 5px 0;
+    width: 100%;
+}
+/*End top styling*/
+
+/*Why Styling*/
+#why{
+    background: rgba(0,113,184,.4);
+}
+#why article{
+    float: left;
+    width: 30.33%;
+}
+#why article:not(:last-of-type){
+    margin-right: 4.5%;
+}
+#why h3{
+    text-decoration: underline;
+    padding-left: 1px;
+}
+#why p{
+
+}
+
+
+
+/*Form Styling*/
+form{
+	position: relative;
+	margin: 0 auto;
+	width: 800px;
+}
+form section{
+	height: 30px;
+    margin: 0;
+    width: auto;
+}
+form label{
+	display: inline-block;
+	width: 481px;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+	background: rgba(0,113,184,.8);
+	padding-left: 15px;
+	margin: 0;
+	position: absolute;
+	border-top: 1px solid white;	
+}
+label[for~="creatype"]{
+
+}
+.bald{
+	border-top: none;
+}
+#msg label{
+	width: 785px;
+	text-align: center;
+}
+form input, select{
+    display: inline-block;
+	width: 304px;
+	height: 30px;
+	position: relative;
+	left: 0;
+	float: right;
+    border: 1px solid #0071B8;
+	margin: 0;
+
+}
+select{
+	appearance: none;
+	-moz-appearance: none;
+	border: 0;
+	border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    background: rgba(0,113,184,.8);
+
+    text-align: center;
+	color: white;
+	/*border-left: 1px solid white;*/
+    border-top: 1px solid white;
+    /*border-bottom: 1px solid white;*/
+
+    line-height: 30px;
+}
+
+textarea{
+	-webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+	width: 800px;
+	height: 120px;
+	position: relative;
+	top: 30px;
+    background: rgba(255,255,255,.55);
+    border: 1px solid #0071B8;
+
+}
+#msg{
+	height: 150px;
+}
+#daform button{
+	position: relative;
+	left: 496px;
+    width: 304px;
+	height: 30px;
+	background-color: darkorange;
+	color: white;	
+}
+/*End form styling*/
+footer{
+	background-color: #0071B8;
+	height: 100px;
+	width: 100%;
+}
+.escape{
+        width: 85px;
+        position: fixed;
+        top: 8px;
+        left:8px;
+        z-index: 5;
+    }
+
+
+#cta{
+    display: block;
+    max-width: 360px;
+    margin: 20px auto 0 auto;
+}
+#cta input{
+    display: block;
+    width: 100%;
+    padding-left: 5px;
+}
+#cta button{
+    width: 100%;
+    height: 50px;
+    font: 30px "ever_afterregular", sans-serif;
+    background-color: darkorange;
+}
+#miniform{
+    width: 100%;
+}
+
+
